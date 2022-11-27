@@ -1,0 +1,2 @@
+# allStarGingaSai
+ビンゴ用のサンプル

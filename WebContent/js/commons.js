@@ -3,7 +3,7 @@ function buttonClick(no){
 	let itemNo = "item" + no;
 	let imgNo = "img" + no;
 	document.getElementById(imgNo).src= "../img/panel/done.png";
-	document.getElementById(itemNo).outerHTML="<div class='animate__animated animate__fadeInDown animate__slow' id="+itemNo+"><a href='../img/item/" + no + ".jpg' target='_blank'>"+ itemMap.get(no) + "</a></div>";
+	document.getElementById(itemNo).outerHTML="<div class='animate__animated animate__fadeInDown animate__slow m-2' id="+itemNo+"><a href='../img/item/" + no + ".jpg' target='_blank'>"+ itemMap.get(no) + "</a></div>";
 
 
 }

@@ -1,0 +1,32 @@
+
+body {
+	  background-color: #f5f5f5;
+	  background-image: url("../img/bg_title.jpg");
+}
+h1 {
+	text-shadow: 1px 2px 3px #808080;
+}
+a {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+.buttons-side{
+}
+.buttons-side a{
+	display: inline-block;
+}
+.buttons-side button{
+	display: inline-block;
+}
+.main{
+
+}
+.container {
+		  background-image: none;
+		  background-color: #f5f5f5;
+}
+.done{
+		  background-color: black;
+}

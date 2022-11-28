@@ -50,28 +50,33 @@ function RootView() {
 }
 
 function ItemBox({ img, id }) {
+  const openKey = `${id}_isopen`;
+  const nameKey = `${id}_name`;
+  const doneKey = `${id}_done`;
+
   const [isopen, setIsOpen] = React.useState(false);
+  const [done, setDone] = React.useState(false);
   const [name, setName] = React.useState("");
 
   React.useEffect(() => {
-    console.log("ST");
     localforage.getItem(openKey).then((d) => setIsOpen(!!d));
     localforage.getItem(nameKey).then((n) => setName(n));
+    localforage.getItem(doneKey).then((n) => setDone(!!n));
     return () => {};
   }, []);
 
-  let { src, alt } = img;
+  const { alt } = img;
+  let src = "";
+
+console.log(isopen)
 
   if (!isopen) {
-    if (name) {
-      src = "../img/panel/done.png";
-    } else {
-      src = `../img/panel/${String(id).padStart(2, "0")}.png`;
-    }
+    src = `../img/panel/${String(id).padStart(2, "0")}.png`;
+  } else if (!done) {
+    src = img.src;
+  } else {
+    src = "../img/panel/done.png";
   }
-
-  const openKey = `${id}_isopen`;
-  const nameKey = `${id}_name`;
 
   const titleCss = isopen
     ? "animate__animated animate__fadeInDown animate__slow m-2"
@@ -88,8 +93,16 @@ function ItemBox({ img, id }) {
         alignItems: "center",
       }}
     >
-      {[<img key={src} alt={alt} src={src} width={128} height={128} />]}
-
+      <a
+        href="#"
+        onClick={() => {
+          
+          setIsOpen(!isopen);
+          localforage.setItem(openKey, !isopen);
+        }}
+      >
+        <img key={src} alt={alt} src={src} width={128} height={128} />
+      </a>
       <div>
         <div className={titleCss} id={`item${id}`}>
           {isopen && (
@@ -102,8 +115,8 @@ function ItemBox({ img, id }) {
       <div
         className="btn btn-secondary m-1"
         onClick={() => {
-          setIsOpen(!isopen);
-          localforage.setItem(openKey, !isopen);
+          setDone(!done);
+          localforage.setItem(doneKey, !done);
         }}
       >
         選択
@@ -113,11 +126,10 @@ function ItemBox({ img, id }) {
           type="text"
           placeholder="名前欄"
           value={name}
-          onChange={(e) => {
-            const name = e.target.value;
-            setName(e.target.value);
+          onChange={({ target }) => {
+            const name = target.value;
+            setName(name);
             localforage.setItem(nameKey, name);
-            console.log();
           }}
         />
       </div>

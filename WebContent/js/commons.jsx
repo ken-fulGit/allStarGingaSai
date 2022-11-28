@@ -45,6 +45,7 @@ function RootView() {
       {items.map((e, i) =>
         e == "nop" ? <div></div> : <ItemBox {...e} key={i} />
       )}
+      <ResetButton />
     </div>
   );
 }
@@ -68,7 +69,7 @@ function ItemBox({ img, id }) {
   const { alt } = img;
   let src = "";
 
-console.log(isopen)
+  console.log(isopen);
 
   if (!isopen) {
     src = `../img/panel/${String(id).padStart(2, "0")}.png`;
@@ -96,7 +97,6 @@ console.log(isopen)
       <a
         href="#"
         onClick={() => {
-          
           setIsOpen(!isopen);
           localforage.setItem(openKey, !isopen);
         }}
@@ -132,6 +132,24 @@ console.log(isopen)
             localforage.setItem(nameKey, name);
           }}
         />
+      </div>
+    </div>
+  );
+}
+function ResetButton() {
+  return (
+    <div
+      className="col border border-dark rounded p-2"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div
+        onClick={() => localforage.clear().then(() => window.location.reload())}
+      >
+        <span class="material-symbols-outlined">refresh</span>
       </div>
     </div>
   );

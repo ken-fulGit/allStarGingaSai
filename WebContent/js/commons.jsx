@@ -9,97 +9,23 @@ const doneimg = "../img/panel/done.png";
 const items = [
   {
     id: 1,
-    img: { alt: "3等☆グランシップカレー半年分", src: "../img/panel/01.png" },
+    img: { alt: "グランシップカレー半年分", src: "../img/panel/01.png" },
   },
-  {
-	id: 2,
-	img: { alt: "1等☆任天堂スイッチ", src: "../img/item/03.jpg" }
-  },
-  {
-	id: 3,
-	img: { alt: "3等☆Amazon Alexa", src: "../img/item/04.jpg" }
-  },
+  { id: 2, img: { alt: "任天堂スイッチ", src: "../img/item/01.jpg" } },
+  { id: 3, img: { alt: "Amazon Alexa", src: "../img/item/01.jpg" } },
   {
     id: 4,
-    img: { alt: "3等☆ワイヤレスイヤホン5000円相当", src: "../img/item/06.jpg" },
+    img: { alt: "グランシップカレー半年分", src: "../img/item/01.jpg" },
   },
   {
     id: 5,
     img: {
-      alt: "4等☆うまい棒人気８種類×５本 40本セット",src: "../img/item/05.jpg"},
+      alt: "うまい棒人気８種類×５本 40本セット",
+      src: "../img/item/01.jpg",
+    },
   },
-  {
-    id: 6,
-    img: {
-      alt: "4等☆うまい棒人気８種類×５本 40本セット",src: "../img/item/05.jpg"},
-  },
-  {
-    id: 7,
-    img: {
-      alt: "4等☆ギフトカード1000円分(giftee)",src: "../img/item/giftee.jpg"},
-  },
-  {
-    id: 8,
-    img: {
-      alt: "4等☆ギフトカード1000円分(giftee)",src: "../img/item/giftee.jpg"},
-  },
-  {
-    id: 9,
-    img: {
-      alt: "2等☆高級和牛 10,000円分",src: "../img/item/07.jpg"},
-  },
-  {
-    id: 10,
-    img: {
-      alt: "4等☆ギフトカード1000円分(giftee)",src: "../img/item/giftee.jpg"},
-  },
-  {
-    id: 11,
-    img: {
-      alt: "4等☆ギフトカード1000円分(giftee)",src: "../img/item/giftee.jpg"},
-  },
-  {
-    id: 12,
-    img: {
-      alt: "3等☆ご当地つけ麺セット",src: "../img/item/08.jpg"},
-  },
-  {
-    id: 13,
-    img: {
-      alt: "2等☆スマートウォッチ/fitbit",src: "../img/item/fitbit.png"},
-  },
-  {
-    id: 14,
-    img: {
-      alt: "4等☆ギフトカード1000円分(giftee)",src: "../img/item/giftee.jpg"},
-  },
-  {
-    id: 15,
-    img: {
-      alt: "4等☆うまい棒人気８種類×５本 40本セット",src: "../img/item/05.jpg"},
-  },
-  {
-    id: 16,
-    img: { alt: "3等☆グランシップカレー半年分", src: "../img/panel/01.png" },
-  },
-  {
-    id: 17,
-    img: { alt: "2等☆JCBカード1万円分", src: "../img/panel/jcb.jpg" },
-  },
-  {
-    id: 18,
-    img: { alt: "3等☆アイウォーマー", src: "../img/panel/09.jpg" },
-  },
-  {
-    id: 19,
-    img: { alt: "3等☆ぎん/グランシップ共通　お食事券1万円分", src: "../img/panel/gg.webp" },
-  },
-  {
-    id: 20,
-    img: { alt: "3等☆タブレット（KindleFire7", src: "../img/panel/kindleFire7.jpg" },
-  },
-];
 
+];
 
 function RootView() {
   return (

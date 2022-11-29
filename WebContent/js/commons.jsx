@@ -9,7 +9,7 @@ const doneimg = "../img/panel/done.png";
 const items = [
   {
     id: 1,
-    img: { alt: "3等☆グランシップカレー半年分", src: "../img/panel/01.png" },
+    img: { alt: "3等☆グランシップカレー半年分", src: "../img/item/01.png" },
   },
   {
 	id: 2,
@@ -69,23 +69,23 @@ const items = [
   },
   {
     id: 16,
-    img: { alt: "3等☆グランシップカレー半年分", src: "../img/panel/01.png" },
+    img: { alt: "3等☆グランシップカレー半年分", src: "../img/item/01.png" },
   },
   {
     id: 17,
-    img: { alt: "2等☆JCBカード1万円分", src: "../img/panel/jcb.jpg" },
+    img: { alt: "2等☆JCBカード1万円分", src: "../img/item/jcb.jpg" },
   },
   {
     id: 18,
-    img: { alt: "3等☆アイウォーマー", src: "../img/panel/09.jpg" },
+    img: { alt: "3等☆アイウォーマー", src: "../img/item/09.jpg" },
   },
   {
     id: 19,
-    img: { alt: "3等☆ぎん/グランシップ共通　お食事券1万円分", src: "../img/panel/gg.webp" },
+    img: { alt: "3等☆ぎん/グランシップ共通　お食事券1万円分", src: "../img/item/gg.webp" },
   },
   {
     id: 20,
-    img: { alt: "3等☆タブレット（KindleFire7", src: "../img/panel/kindleFire7.jpg" },
+    img: { alt: "3等☆タブレット（KindleFire7", src: "../img/item/kindleFire7.jpg" },
   },
 ];
 

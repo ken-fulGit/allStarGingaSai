@@ -9,7 +9,7 @@ const doneimg = "../img/panel/done.png";
 const items = [
   {
     id: 1,
-    img: { alt: "3等☆グランシップカレー半年分", src: "../img/item/01.png" },
+    img: { alt: "3等☆グランシップカレー半年分", src: "../img/item/01.jpg" },
   },
   {
 	id: 2,
@@ -69,7 +69,7 @@ const items = [
   },
   {
     id: 16,
-    img: { alt: "3等☆グランシップカレー半年分", src: "../img/item/01.png" },
+    img: { alt: "3等☆グランシップカレー半年分", src: "../img/item/01.jpg" },
   },
   {
     id: 17,

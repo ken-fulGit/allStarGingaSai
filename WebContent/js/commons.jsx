@@ -24,7 +24,13 @@ const items = [
       src: "../img/item/01.jpg",
     },
   },
-
+  {
+    id: 6,
+    img: {
+      alt: "うまい棒人気８種類×５本 40本セット",
+      src: "../img/item/01.jpg",
+    },
+  },
 ];
 
 function RootView() {
